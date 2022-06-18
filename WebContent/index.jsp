@@ -46,6 +46,6 @@ div.ex {
 			</table>
 			<input type="submit" value="register"/>
 		</form>
-	</div>
+	</div> 
 </body>
 </html>
