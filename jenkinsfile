@@ -1,0 +1,22 @@
+                pipeline {
+                    agent any
+                    stages {
+                        stage('Pull') {
+                            steps {
+                                git branch: 'J2EE', url: 'https://github.com/abhilash-1993/onlinebookstore.git'
+                                sh 'ls'
+                            }
+                        }
+                        stage('Build') {
+                            steps {
+                                echo 'code is Building'
+                                sh 'mvn clean package'
+                            }
+                        }
+                        stage('deploy to server') {
+                            steps {
+                              echo 'code deploy'
+                            }
+                        }
+                    }
+                }
