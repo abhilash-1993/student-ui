@@ -5,6 +5,7 @@
                             steps {
                                 git branch: 'J2EE', url: 'https://github.com/abhilash-1993/onlinebookstore.git'
                                 sh 'ls'
+                                sh 'pwd'
                             }
                         }
                         stage('Build') {
